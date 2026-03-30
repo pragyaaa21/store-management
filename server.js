@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const productRoutes = require("./routes/productRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
+const app = express()
 app.use(cors({
   origin: "http://localhost:5173"
 }))
